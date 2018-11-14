@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="10"
+    android:background="@drawable/background_board"
+    android:gravity="center_vertical"
+    android:layout_margin="6dp">
+
+    <ImageView
+        android:id="@+id/imagePostBoard"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_post_it"
+        android:layout_marginStart="10dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/boardName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:paddingBottom="0dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/placeholder"
+            android:textColor="@color/primaryText"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/createdAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:padding="5dp"
+            android:text="@string/created_at" />
+    </LinearLayout>
+
+</LinearLayout>
